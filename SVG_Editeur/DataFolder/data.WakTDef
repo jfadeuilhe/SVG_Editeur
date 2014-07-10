@@ -1,1 +1,1 @@
-﻿[{"dataTableNum":1,"tableName":"MesImages","fields":[{"fieldName":"ID","posInRecord":1},{"fieldName":"titre","posInRecord":2},{"fieldName":"image","posInRecord":3}]}]
+﻿[{"dataTableNum":1,"tableName":"MesImages","fields":[{"fieldName":"ID","posInRecord":1},{"fieldName":"titre","posInRecord":2},{"fieldName":"image","posInRecord":3},{"fieldName":"txtImage","posInRecord":4}]}]

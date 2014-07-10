@@ -2,8 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
-	var dataGrid1 = {};	// @dataGrid
-	var bSave = {};	// @buttonImage
+	var dgImages = {};	// @dataGrid
 // @endregion// @endlock
 
 	var Svg = $$("svg");
@@ -11,21 +10,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
+	dgImages.onRowClick = function dgImages_onRowClick (event)// @startlock
 	{// @endlock
 		// Add your code here
 	};// @lock
 
-	bSave.click = function bSave_click (event)// @startlock
-	{// @endlock
-		var txtSVG = $("#canvasGrid").html();// Add your code here
-		
-		alert(txtSVG);
-		
-	};// @lock
-
 // @region eventManager// @startlock
-	WAF.addListener("dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
-	WAF.addListener("bSave", "click", bSave.click, "WAF");
+	WAF.addListener("dgImages", "onRowClick", dgImages.onRowClick, "WAF");
 // @endregion
 };// @endlock

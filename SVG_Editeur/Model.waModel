@@ -7,43 +7,56 @@
 				"panelColor": "#eee",
 				"panel": {
 					"isOpen": "true",
+					"pathVisible": true,
 					"position": {
 						"X": 25,
 						"Y": 20
-					},
-					"pathVisible": true
+					}
 				}
 			}
 		},
 		"model": {
 			"scriptMode": "manual",
 			"workspaceLeft": 0,
-			"workspaceTop": 0
+			"workspaceTop": 0,
+			"relationCurve": {
+				"run": true,
+				"mode": 2
+			}
 		}
 	},
 	"dataClasses": [
 		{
-			"collectionName": "MesImagesCollection",
+			"name": "MesImages",
 			"className": "MesImages",
+			"collectionName": "MesImagesCollection",
+			"scope": "public",
 			"attributes": [
 				{
 					"name": "ID",
 					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
 					"type": "long",
-					"autosequence": "true",
-					"unique": "true",
-					"primKey": "true"
+					"primKey": true
 				},
 				{
 					"name": "titre",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "string"
 				},
 				{
 					"name": "image",
+					"kind": "storage",
 					"scope": "public",
-					"type": "image",
+					"type": "image"
+				},
+				{
+					"name": "txtImage",
+					"scope": "public",
+					"type": "string",
 					"kind": "storage"
 				}
 			]
