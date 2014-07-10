@@ -18,7 +18,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	bSave.click = function bSave_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		var txtSVG = $("#canvasGrid").html();// Add your code here
+		
+		alert(txtSVG);
+		
 	};// @lock
 
 // @region eventManager// @startlock

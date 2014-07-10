@@ -12,7 +12,7 @@
 		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
 
 		
-		<meta data-type="dataSource" data-lib="WAF" data-source="mesImages" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="mesImages" content="mesImages"/><meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="mesImages" data-lib="WAF" data-id="mesImages" data-dataType="string" data-autoLoad="true" content="mesImages"/><meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
 </head>
 	<body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[['bSave','icon1','label2']]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
 		<div id="dataGrid1" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-constraint-bottom="true" data-column="[{'sourceAttID':'image','colID':'image','width':'100','title':'Image'},{'sourceAttID':'titre','colID':'titre','title':'Titre'}]" data-binding="mesImages" class="waf-widget waf-dataGrid"></div>
@@ -20,19 +20,16 @@
 	 	<input type="text" id="vNom" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Titre" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="mesImages.titre" class="waf-widget waf-textField"/>
  		<label id="label1" for="vNom" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textfield">Titre</label>
  		<div id="cSVGEditeur" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-container waf-container-level-1 waf-level-1">
-			<iframe width="100%" src="http://svg-edit.googlecode.com/svn/branches/stable/editor/svg-editor.html" id="svg" height="100%"></iframe>			
+						
 		</div>
- 		<div id="bSave" data-type="buttonImage" data-lib="WAF" data-action="save" class="waf-widget waf-buttonImage" data-target="_blank" data-constraint-left="false" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="true" data-linked-tag="icon1" data-binding="mesImages">
-	 	 	<span id="icon1" data-type="icon" data-lib="WAF" data-label="Enregistrer" data-label-position="right" data-icon-type="images" class="waf-widget waf-icon" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="bSave" data-context="['protected','allowResize','protected','allowResize','protected','allowResize']" data-image-state1="/images/002_05.png" data-image-state2="/images/002_05.png" data-image-state3="/images/002_05.png" data-image-state4="/images/002_05.png"><img src="/images/002_05.png" class="waf-icon-state1"/><img src="/images/002_05.png" class="waf-icon-state2"/><img src="/images/002_05.png" class="waf-icon-state3"/><img src="/images/002_05.png" class="waf-icon-state4"/></span>
- 	 		<label id="label2" data-type="label" data-lib="WAF" for="icon1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-icon" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-context="['protected','allowResize','protected','allowResize','protected','allowResize']">Enregistrer</label>
+ 		<div id="bSave" data-type="buttonImage" data-target="_blank" data-linked-tag="icon1" data-lib="WAF" data-constraint-top="true" data-constraint-right="true" data-constraint-left="false" data-constraint-bottom="false" data-binding="mesImages" data-action="save" class="waf-widget waf-buttonImage">
+	 	 	<span id="icon1" data-type="icon" data-linked-tag="bSave" data-lib="WAF" data-label-position="right" data-label="Enregistrer" data-icon-type="images" data-context="['protected','allowResize','protected','allowResize','protected','allowResize','protected','allowResize']" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-icon"></span>
+ 	 		<label id="label2" for="icon1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-context="['protected','allowResize','protected','allowResize','protected','allowResize','protected','allowResize']" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-icon">Enregistrer</label>
  	 	</div>
  	</div>
 		<div id="cTete" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-container waf-container-level-0 waf-level-0">
 	 	<div id="tTitre" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">SVG Edit</div>
  	</div>
-	
-	
-	
 		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
 </html>
