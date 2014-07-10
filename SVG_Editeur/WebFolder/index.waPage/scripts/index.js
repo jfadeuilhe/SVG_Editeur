@@ -15,22 +15,24 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	bSave.click = function bSave_click (event)// @startlock
 	{// @endlock
-		var $svg =  $("#svg").contents().find("#svgcontent");
+		//var $svg =  $("#svg").contents().find("#svgcontent");
+		
+		//var txt =  $("#svg").contents().find("#svgcontent").html();
+		
+		//alert(txt);
 	//debugger;	
 //		if(svg != null)
-//			WAF.sources.mesImages.txtImage = $svg;
+		//WAF.sources.mesImages.txtImage = txt.value;
+		//WAF.sources.mesImages.save();
+		
+		selImage();
+		
 	};// @lock
 
 	dgImages.onRowClick = function dgImages_onRowClick (event)// @startlock
 	{// @endlock
 		selImage();
-		
-	//debugger;
-		//var txt = WAF.sources.mesImages.txtImage.getValue;
-		
-//		if(WAF.sources.mesImages.txtImage != "")
-//			$svg.innerHTML(WAF.sources.mesImages.txtImage);
-			
+		selImage();
 	};// @lock
 	
 	function selImage(){
@@ -38,11 +40,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		var $svg =  $("#svg").contents().find("#svgcontent");
 		var $aff =  $("#cAffImage");
 		var txt = "";
-		
+	//debugger;
 		if(WAF.sources.mesImages.txtImage != ""){
 			txt = WAF.sources.mesImages.txtImage;
 		}
-		$("#cAffImage").html(txt);
+		$aff.html(txt);
+		$svg.html(txt);
 	}
 
 // @region eventManager// @startlock
