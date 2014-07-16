@@ -21,15 +21,15 @@
 	 	<input type="text" id="vNom" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Titre" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="mesImages.titre" class="waf-widget waf-textField"/>
  		<label id="label1" for="vNom" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textfield">Titre</label>
  		<div id="cSVGEditeur" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true" class="waf-widget waf-container waf-container-level-1 waf-level-1">
-			<iframe width="100%" src="svg-edit\svg-editor.html" name="svg" id="svg" height="100%"></iframe>
-		</div>
+				<div id="svg" data-type="frame" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true" class="waf-widget waf-frame" data-src="/svg-edit/svg-editor.html"></div>
+ 	 		</div>
  			<button id="bSave" data-type="button" data-text="Enregistrer" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="true" data-constraint-left="false" data-constraint-bottom="false" data-binding="mesImages" data-action="save" class="waf-widget waf-button"></button>
  	<input type="text" id="textField1" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Contenu" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" data-binding="mesImages.txtImage" class="waf-widget waf-textField"/>	<label id="label2" for="textField1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-right="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textfield">Contenu</label>
  	</div>
 		<div id="cTete" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-container waf-container-level-0 waf-level-0">
 	 	<div id="tTitre" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">SVG Edit</div>
  	</div>
-		<div id="cAffImage" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-0 waf-level-0" data-label="" data-label-position="top" data-constraint-bottom="true" data-constraint-top="false"></div>
+		<div id="cAffImage" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="false" data-constraint-bottom="true" class="waf-widget waf-container waf-container-level-0 waf-level-0"></div>
 		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
 </html>

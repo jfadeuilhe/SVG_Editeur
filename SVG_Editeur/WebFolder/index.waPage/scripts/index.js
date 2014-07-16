@@ -16,9 +16,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	//selImage();
 
-	$('#svg').ready(function() {
+	$('#svg').find("iframe").ready(function() {
 
-	    var ifrm = $('#svg')[0];
+	    var ifrm = $('#svg').find("iframe")[0];
 
 	    // waiting for real load
 	    (function(){
@@ -36,7 +36,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		//var $svg =  $("#svg").contents().find("#svgcontent");
 		//var txt = $svg_f = $('#svg')[0].contentWindow.svgEditor.find("#svgcontent").html();
 		
-		var $svg_c =  $("#svg").contents().find("#svgcontent");
+		var $svg_c =  $("#svg").find("iframe").contents().find("#svgcontent");
 		
 		var txt = $svg_c.html();
 		
@@ -61,7 +61,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	
 	function selImage(){
 		
-		var $svg_f = $('#svg')[0].contentWindow.svgEditor; 		//Récupération de la racine de svg-edit
+		var $svg_f = $('#svg').find("iframe")[0].contentWindow.svgEditor; 		//Récupération de la racine de svg-edit
 		var $aff =  $("#cAffImage");
 		var txt = WAF.sources.mesImages.txtImage;
 		
