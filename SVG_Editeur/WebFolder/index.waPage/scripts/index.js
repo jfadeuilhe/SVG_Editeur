@@ -2,17 +2,11 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
-	var documentEvent = {};	// @document
 	var bSave = {};	// @button
 	var dgImages = {};	// @dataGrid
 // @endregion// @endlock
 
 // eventHandlers// @lock
-
-	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
-	{// @endlock
-		// Add your code here
-	};// @lock
 
 	//selImage();
 
@@ -36,18 +30,18 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		//var $svg =  $("#svg").contents().find("#svgcontent");
 		//var txt = $svg_f = $('#svg')[0].contentWindow.svgEditor.find("#svgcontent").html();
 		
-		var $svg_c =  $("#svg").find("iframe").contents().find("#svgcontent");
+		//var $svg_c =  $("#svg").find("iframe").contents().find("#svgcontent");
+		//var txt = $svg_c.html();
 		
-		var txt = $svg_c.html();
-		
-		alert(txt);
+		var $svg_c =  $("#svg").find("iframe").contents().find("#svg_source_textarea");
+		var txt = $svg_c.val();
 
-		if(txt != ""){
+		if((txt != "") && ($svg_c.is(":visible")==true)){
 			WAF.sources.mesImages.txtImage = txt;
 			WAF.sources.mesImages.save();
-			
 			$("#cAffImage").html(txt); 			//L'afficher dans la zone locale
-		}
+		} else
+			alert("Vous devez ouvrir le source svg pour le récupérer !\nCliquez sur le bouton <SVG>");
 	};// @lock
 
 	dgImages.onRowClick = function dgImages_onRowClick (event)// @startlock
@@ -70,7 +64,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	}
 
 // @region eventManager// @startlock
-	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 	WAF.addListener("bSave", "click", bSave.click, "WAF");
 	WAF.addListener("dgImages", "onRowClick", dgImages.onRowClick, "WAF");
 // @endregion
